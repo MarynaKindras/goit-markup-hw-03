@@ -317,12 +317,14 @@ body {
         /* ====== PORTFOLIO ======= */
     
         /* ====== PAGE MAIN ===== */
+
                 .first-section {
                     padding-top: 96px;
                     padding-bottom: 120px;
                 }
     
 .menu-buttons {
+    display: flex;
 justify-content: center;
     gap: 24px;
     margin-right: 24px;
@@ -370,6 +372,23 @@ justify-content: center;
             color: var(--main-text-color);
         }
     
+                .portfolio-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 48px 24px;
+                }
+
+.example-cell {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+    /* border: 1px solid #e7e9fc; */
+}
+
+.cell {
+    padding: 32px 16px;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    border-bottom: 1px solid #e7e9fc;
+}
         /* ====== PAGE MAIN ===== */
     
     
@@ -413,6 +432,5 @@ justify-content: center;
         }
 
                 
-                }
     
         /* ====== PAGE FOOTER ===== */
