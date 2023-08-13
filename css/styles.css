@@ -6,6 +6,7 @@
     --hover-color: #404bbf;
     --button-color: #F4F4FD;
     --accent-color: #2e2f42;
+    --button-color-border: #e7e9fc;
 }
 
 h1,
@@ -166,10 +167,9 @@ body {
 
 /* ====== PAGE SECTION 1 ===== */
 
-.first-section {
-        padding-top: 188px;
-        padding-bottom: 188px;
-        align-content: center;
+.hero {
+    padding: 188px 0 188px;
+    align-content: center;
     background-color: var(--accent-color);
 }
 
@@ -224,6 +224,11 @@ body {
 
 
     /* ====== PAGE SECTION 2 ===== */
+
+        .section {
+            padding-top: 120px;
+            padding-bottom: 0px;
+        }
 
     .text {
         font-size: 16px;
@@ -317,6 +322,14 @@ body {
                     padding-bottom: 120px;
                 }
     
+.menu-buttons {
+justify-content: center;
+    gap: 24px;
+    margin-right: 24px;
+    margin-right: 0;
+    margin-bottom: 72px;
+}
+
         .menu-button {
             font-family: "Roboto", sans-serif;
             font-weight: 500;
@@ -325,6 +338,10 @@ body {
             letter-spacing: 0.04em;
             color: var(--logo-color);
             background-color: var(--button-color);
+            display: flex;
+        padding: 12px 24px;
+        border: 1px solid var(--button-color-border);
+        border-radius: 4px;
         }
     
         button {
@@ -335,6 +352,7 @@ body {
         .menu-button:focus {
             color: var(--white-color);
             background-color: var(--hover-color);
+            border: 1px solid transparent;
         }
     
         .title-list {
