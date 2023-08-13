@@ -71,9 +71,26 @@ body {
     padding-bottom: 120px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* ====== PAGE HEADER ===== */
 .page-header-container {
     display: flex;
+}
+
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .page-navigation {
@@ -103,6 +120,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-color);
+    margin-right: 76px;
 }
 
 .accent-logo {
@@ -124,6 +142,11 @@ body {
 
 .address {
     font-style: normal;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
 }
 
 .list {
@@ -257,6 +280,11 @@ body {
                  /* align-items: center; */
         }
 
+                .example-cell {
+                    flex-basis: calc((100% - 2 * 24px) / 3);
+                    /* border: 1px solid #e7e9fc; */
+                }
+
                 .team-list {
                     /* display: flex; */
                     gap: 24px;
@@ -276,8 +304,14 @@ body {
      padding: 32px 0;
  }
     /* ====== PAGE SECTION 4 ===== */
+
+        /* ====== PORTFOLIO ======= */
     
         /* ====== PAGE MAIN ===== */
+                .first-section {
+                    padding-top: 96px;
+                    padding-bottom: 120px;
+                }
     
         .menu-button {
             font-family: "Roboto", sans-serif;
