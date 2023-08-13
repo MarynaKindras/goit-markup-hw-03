@@ -167,8 +167,8 @@ body {
 /* ====== PAGE SECTION 1 ===== */
 
 .first-section {
-    /* height: 600px; */
-        padding: 188px 0;
+        padding-top: 188px;
+        padding-bottom: 188px;
         align-content: center;
     background-color: var(--accent-color);
 }
@@ -368,6 +368,7 @@ body {
                 }
     
         .logo {
+            font-style: normal;
             font-family: "Raleway", sans-serif;
             font-weight: 800;
             font-size: 18px;
@@ -375,6 +376,8 @@ body {
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: var(--logo-color);
+            margin-bottom: 16px;
+                display: inline-block;
         }
     
         .text-footer {
@@ -387,15 +390,6 @@ body {
 
         .accent {
             color: #f4f4fd;
-            font-size: 18px;
-                font-style: normal;
-                font-weight: 800;
-                line-height: 1.17;
-                letter-spacing: 0.54px;
-                text-transform: uppercase;
-                color: #f4f4fd;
-                margin-bottom: 16px;
-                display: inline-block;
         }
     
         /* ====== PAGE FOOTER ===== */
